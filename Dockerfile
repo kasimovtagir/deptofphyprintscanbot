@@ -28,6 +28,15 @@ RUN apt install -y iputils-ping
 RUN apt install -y unoconv 
 RUN apt install -y python3-pip
 #RUN pip install --upgrade pip
+RUN apt-get install -y python3-pyTelegramBotAPI
+RUN apt-get install -y python3-Pillow
+RUN apt-get install -y python3-PyPDF2
+RUN apt-get install -y python3-requests
+RUN apt-get install -y python3-telebot
+RUN apt-get install -y python3-uno
+RUN apt-get install -y python3-docx2pdf
+RUN apt-get install -y python3-pydocx
+RUN apt-get install -y python3-ping3
 
 #-writer
 
@@ -42,15 +51,7 @@ RUN useradd \
 
 COPY . .
 COPY requirements.txt requirements.txt
-RUN apt-get install -y python3-pyTelegramBotAPI
-RUN apt-get install -y python3-Pillow
-RUN apt-get install -y python3-PyPDF2
-RUN apt-get install -y python3-requests
-RUN apt-get install -y python3-telebot
-RUN apt-get install -y python3-uno
-RUN apt-get install -y python3-docx2pdf
-RUN apt-get install -y python3-pydocx
-RUN apt-get install -y python3-ping3
+
 #RUN pip install -r requirements.txt
 
 
