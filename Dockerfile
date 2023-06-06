@@ -1,6 +1,6 @@
 FROM debian:testing
 #FROM ubuntu:latest
-RUN  apt update -y
+RUN  apt-get update -y
 
 
 # RUN apt install -y python3-venv
