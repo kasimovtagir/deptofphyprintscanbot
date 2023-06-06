@@ -7,7 +7,7 @@ RUN  apt update -y
 # RUN python3 -m venv /venv
 # ENV PATH="/venv/bin:$PATH"
 
-RUN apt install -y unoconv 
+
 RUN apt install -y cups 
 RUN apt install -y sudo
 RUN apt install -y cups-client 
@@ -25,6 +25,7 @@ RUN apt install -y nfs-common
 RUN apt install -y mc
 RUN apt install -y libreoffice 
 RUN apt install -y iputils-ping
+RUN apt install -y unoconv 
 
 #-writer
 
