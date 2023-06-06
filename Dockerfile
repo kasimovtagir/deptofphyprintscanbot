@@ -3,9 +3,9 @@ FROM debian:testing
 RUN  apt update -y
 
 
-RUN apt install -y python3-venv
-RUN python3 -m venv /venv
-ENV PATH="/venv/bin:$PATH"
+# RUN apt install -y python3-venv
+# RUN python3 -m venv /venv
+# ENV PATH="/venv/bin:$PATH"
 
 RUN apt install -y unoconv 
 RUN apt install -y cups 
