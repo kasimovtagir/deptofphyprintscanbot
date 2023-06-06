@@ -26,7 +26,8 @@ RUN apt install -y mc
 RUN apt install -y libreoffice 
 RUN apt install -y iputils-ping
 RUN apt install -y unoconv 
-#RUN apt install -y pip3
+RUN apt install -y python3-pip
+RUN pip install -y --upgrade pip
 
 #-writer
 
