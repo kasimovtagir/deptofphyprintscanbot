@@ -26,6 +26,7 @@ RUN apt install -y mc
 RUN apt install -y libreoffice 
 RUN apt install -y iputils-ping
 RUN apt install -y unoconv 
+RUN apt install -y python3
 RUN apt install -y python3-pip
 #RUN pip install --upgrade pip
 RUN apt-get install -y python3-pyTelegramBotAPI
