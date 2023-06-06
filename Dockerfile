@@ -42,15 +42,15 @@ RUN useradd \
 
 COPY . .
 COPY requirements.txt requirements.txt
-RUN apt install -y python3-pyTelegramBotAPI
-RUN apt install -y python3-Pillow
-RUN apt install -y python3-PyPDF2
-RUN apt install -y python3-requests
-RUN apt install -y python3-telebot
-RUN apt install -y python3-uno
-RUN apt install -y python3-docx2pdf
-RUN apt install -y python3-pydocx
-RUN apt install -y python3-ping3
+RUN apt-get install -y python3-pyTelegramBotAPI
+RUN apt-get install -y python3-Pillow
+RUN apt-get install -y python3-PyPDF2
+RUN apt-get install -y python3-requests
+RUN apt-get install -y python3-telebot
+RUN apt-get install -y python3-uno
+RUN apt-get install -y python3-docx2pdf
+RUN apt-get install -y python3-pydocx
+RUN apt-get install -y python3-ping3
 #RUN pip install -r requirements.txt
 
 
