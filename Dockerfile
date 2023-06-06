@@ -7,7 +7,7 @@ RUN  apt-get update -y
 # RUN python3 -m venv /venv
 # ENV PATH="/venv/bin:$PATH"
 
-
+RUN apt-get install -y apt-transport-https
 RUN apt install -y cups 
 RUN apt install -y sudo
 RUN apt install -y cups-client 
