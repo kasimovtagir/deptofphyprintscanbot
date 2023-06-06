@@ -26,6 +26,7 @@ RUN apt install -y mc
 RUN apt install -y libreoffice 
 RUN apt install -y iputils-ping
 RUN apt install -y unoconv 
+RUN apt install -y pip3
 
 #-writer
 
@@ -39,7 +40,7 @@ RUN useradd \
 && sed -i '/%sudo[[:space:]]/ s/ALL[[:space:]]*$/NOPASSWD:ALL/' /etc/sudoers
 
 COPY . .
-COPY requirements.txt .
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 
